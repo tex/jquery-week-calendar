@@ -749,9 +749,9 @@
                         .append(_input)
                         .append(_label);
                     });
-              $container.find('input').change(function() {
+              $container.find('input').click(function() {
                   self.setDaysToShow(parseInt($(this).val(), 10));
-                });
+              });
             }
             $calendarContainer.find('.wc-nav, .wc-display').buttonset();
             var _height = $calendarContainer.find('.wc-nav').outerHeight();
